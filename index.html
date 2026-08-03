@@ -66,24 +66,39 @@
       margin-bottom: 30px;
     }
 
+    /* ----- MAIN CALL BUTTON (highly visible) ----- */
     .call-btn {
       display: inline-block;
       background-color: #0070ba;
       color: #ffffff;
       text-decoration: none;
-      padding: 12px 30px;
-      font-size: 17px;
-      font-weight: 400;
-      border-radius: 980px;
-      margin-bottom: 40px;
-      transition: background 0.2s;
-      font-weight: 500;
+      padding: 18px 44px;
+      font-size: 22px;
+      font-weight: 600;
+      border-radius: 60px;
+      margin-bottom: 28px;
+      transition: background 0.2s, transform 0.1s;
+      box-shadow: 0 8px 20px rgba(0, 112, 186, 0.35);
+      letter-spacing: 0.3px;
+      border: none;
+      cursor: pointer;
     }
 
     .call-btn:hover {
       background-color: #005ea6;
+      box-shadow: 0 10px 28px rgba(0, 112, 186, 0.45);
+      transform: scale(1.02);
     }
 
+    .call-btn:active {
+      transform: scale(0.97);
+    }
+
+    .call-btn i {
+      margin-right: 8px;
+    }
+
+    /* ----- toll-free number (clickable, prominent) ----- */
     .status-container {
       margin-top: 20px;
     }
@@ -97,12 +112,30 @@
       margin-bottom: 8px;
     }
 
-    .number {
-      font-size: 32px;
-      font-weight: 600;
+    .number-link {
+      display: inline-block;
+      font-size: 36px;
+      font-weight: 700;
       color: #1d1d1f;
-      margin-bottom: 40px;
+      text-decoration: none;
+      background: #f5f5f7;
+      padding: 8px 28px;
+      border-radius: 60px;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
       letter-spacing: -0.3px;
+      margin-bottom: 40px;
+      border: 1px solid #e5e5e7;
+    }
+
+    .number-link:hover {
+      background: #0070ba;
+      color: #ffffff;
+      border-color: #0070ba;
+      box-shadow: 0 6px 16px rgba(0, 112, 186, 0.25);
+    }
+
+    .number-link:active {
+      transform: scale(0.97);
     }
 
     .divider {
@@ -204,12 +237,13 @@
     <h1>Contact PayPal Support</h1>
     <p class="subhead">Need help with your account or transaction? Our team is ready to assist you.</p>
 
-    <!-- updated toll-free number -->
-    <a href="tel:+18888425599" class="call-btn">📞 Call Support Now</a>
+    <!-- MAIN CALL BUTTON (highly visible, click to call) UPDATED tollfree -->
+    <a href="tel:+18052362221" class="call-btn">📞 Call Support Now</a>
 
     <div class="status-container">
       <div class="availability">AVAILABLE 24/7 IN THE US</div>
-      <div class="number">+1-888-842-5599</div>
+      <!-- TOLL-FREE NUMBER: clickable, prominent, bigger & with background - UPDATED -->
+      <a href="tel:+18052362221" class="number-link">+1-805-236-2221</a>
     </div>
 
     <div class="divider"></div>
